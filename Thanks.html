@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanks for Watching</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .bg {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: 300% 300%;
+      background-image: linear-gradient(
+            -45deg, 
+            rgba(59,173,227,1) 0%, 
+            rgba(87,111,230,1) 25%, 
+            rgba(152,68,183,1) 51%, 
+            rgba(255,53,127,1) 100%
+      );  
+      animation: AnimateBG 20s ease infinite;
+    }
+    
+    @keyframes AnimateBG { 
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+    .bg input{
+      width: 20vw;
+      height: 10vh;
+      color: hsl(0, 0%, 100%);
+      border: 1px solid hsl(278, 68%, 11%);
+      background-color: hsl(278, 68%, 11%);
+      letter-spacing: 1.5px;
+      font-size: 23px;
+      font-weight: inherit;
+      border-radius: 10px;
+      transition: 0.2s;
+      cursor: pointer;
+    }
+    .bg input:hover{
+      border: 1px solid hsl(278, 94%, 30%);
+      background-color: hsl(278, 94%, 30%);
+    }
+    @media only screen and (max-width:1366px){
+      .bg input{
+        width: 25vw;
+        height: 10vh;
+      }
+    }
+    @media only screen and (max-width:414px){
+      .bg input{
+        width: 80vw;
+        height: 10vh;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="bg">
+  <input type="button" value="Challenge" onclick="document.location.href='https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw'">
+</div>
+
+</body>
+</html>
